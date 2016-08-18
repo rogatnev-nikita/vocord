@@ -1,4 +1,4 @@
-# Vocord website [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url] [![devDependency status][dev-dependency-image]][dev-dependency-url]
+# Vocord [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url] [![devDependency status][dev-dependency-image]][dev-dependency-url]
 [![vocord][2]][1]
   [1]: https://rogatnev-nikita.github.io/vocord/
   [2]: ./img/screenshot.jpg (vocord screenshot)
