@@ -20,6 +20,12 @@
 
 ## File structure
     ROOT FOLDER
+    +-- css
+    ¦    +-- bootstrap.css
+    ¦    +-- bootstrap.min.css
+    ¦    +-- style.css
+    ¦    +-- style.min.css
+    ¦
     +-- fonts
     ¦    +-- 
     ¦
