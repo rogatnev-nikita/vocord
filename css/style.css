@@ -1,0 +1,33 @@
+/* ------------------------------------------ */
+/* GLOBAL
+/* ------------------------------------------ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  color: #f3f4f5;
+  background-color: #efefef;
+}
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%;
+  font: 400 15px/1.4 "Open Sans", sans-serif;
+}
+.visible {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+/* ------------------------------------------ */
+/* MAIN BLOCK
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* FOOTER BLOCK
+/* ------------------------------------------ */
