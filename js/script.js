@@ -1,1 +1,1 @@
-Error: Source sample is missing.
+$(document).ready(function () {});

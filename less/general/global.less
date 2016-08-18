@@ -5,28 +5,32 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
 
-html {
-	height: 100%;
-
-	color: #f3f4f5;
-	background-color: #efefef;
+	outline: 1px dashed lightgrey;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
+	color: @color__text;
+	background-color: #efefef;
 
-	height: 100%;
-
-	font: 400 15px/1.4 "Open Sans", sans-serif;
+	font-family: "Exo 2", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
 }
 
-.visible {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+h1 {
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+span {
 	display: block;
-}
-
-.hidden {
-	display: none;
 }

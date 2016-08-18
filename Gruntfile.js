@@ -25,14 +25,14 @@ module.exports = function (grunt) {
 				src: "css/style.css",
 				dest: "css/style.css"
 			},
-			minify: {
+			minify_style_css: {
 				options: {
 					processors: [require("cssnano")()]
 				},
 				src: "css/style.css",
 				dest: "css/style.min.css"
 			},
-			minify: {
+			minify_bootstrap_css: {
 				options: {
 					processors: [require("cssnano")()]
 				},
