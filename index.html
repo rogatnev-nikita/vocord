@@ -34,7 +34,8 @@
                             </button>
                             <h3 class="header__mobile visible-xs"><a href="tel:+74957872626">+7 (495) 787 26 26</a></h3>
                             <ul class="header__language nav visible-xs list-unstyled">
-                                <li><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU <span class="caret"></span></a>
+                                <li>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU <span class="caret"></span></a>
                                     <ul class="dropdown-menu list-unstyled">
                                         <li><a href="#">RU</a></li>
                                         <li><a href="#">EN</a></li>
@@ -46,7 +47,8 @@
                         <div class="collapse navbar-collapse" id="header__navbar">
                             <ul class="header__main-menu nav navbar-nav">
                                 <li><a href="#">Наша компания</a></li>
-                                <li class="active"><a href="#">Продукты</a>
+                                <li class="active">
+                                    <a href="#">Продукты</a>
                                     <ul class="header__products-menu visible-xs list-unstyled">
                                         <li><a href="./faces.html">Распознавание лиц</a></li>
                                         <li><a href="./number.html">Распознавание номеров</a></li>
@@ -65,14 +67,20 @@
                                 <li class="visible-xs"><a href="#">Поиск</a></li>
                             </ul>
                             <ul class="header__sub-menu nav navbar-nav navbar-right hidden-xs">
-                                <li><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU <span class="caret"></span></a>
+                                <li>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#">RU</a></li>
                                         <li><a href="#">EN</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#"><span class="fa fa-envelope"></span></a></li>
-                                <li><a href="#"><span class="fa fa-search"></span></a></li>
+                                <li class="header__search">
+                                    <a href="#"><span class="fa fa-search"></span></a>
+                                    <form action="#">
+                                        <input id="header__search-input" type="text" class="header__search-input hidden">
+                                    </form>
+                                </li>
                             </ul>
                         </div>
                     </div>
