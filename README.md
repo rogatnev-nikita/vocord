@@ -1,6 +1,11 @@
-# vocord [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url] [![devDependency status][dev-dependency-image]][dev-dependency-url]
+# Vocord [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url] [![devDependency status][dev-dependency-image]][dev-dependency-url]
+
 Разработка и производство профессиональных систем безопасности: видеонаблюдение, распознавание лиц 2D и 3D, распознавание номеров, контроль дорожного движения, контроль цифровых и аналоговых телефонных линий, потока Е1, IP-телефонии, автоматическое оповещение.
 
+[![vocord][2]][1]
+  [1]: https://rogatnev-nikita.github.io/vocord/
+  [2]: ./img/screenshot.jpg (vocord screenshot)
+  
 ## Summary
 * High Resolution: No
 * Compatible Browsers: IE9+, Edge, Firefox, Safari, Opera, Chrome
@@ -16,6 +21,12 @@
 
 ## File structure
     ROOT FOLDER
+    +-- css
+    ¦    +-- bootstrap.css
+    ¦    +-- bootstrap.min.css
+    ¦    +-- style.css
+    ¦    +-- style.min.css
+    ¦
     +-- fonts
     ¦    +-- 
     ¦
