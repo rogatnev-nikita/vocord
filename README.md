@@ -17,14 +17,10 @@
 ## File structure
     ROOT FOLDER
     +-- fonts
-    ¦    +-- proximanova-black-webfont.woff
-    ¦    +-- proximanova-extrabld-webfont.woff
-    ¦    +-- proximanova-light-webfont.woff
-    ¦    +-- proximanova-regular-webfont.woff
-    ¦    +-- proximanova-semibold-webfont.woff
+    ¦    +-- 
     ¦
     +-- img
-    ¦    +--burger-menu.png
+    ¦    +-- 
     ¦
     +-- js
     ¦    +-- script.js
