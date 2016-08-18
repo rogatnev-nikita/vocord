@@ -11,11 +11,15 @@
 
 body {
 	color: @color__text;
-	background-color: #efefef;
+	background-color: @color__white;
 
 	font-family: "Exo 2", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
+}
+
+.body--invert {
+	background-color: @color__light-grey;
 }
 
 h1,
@@ -33,4 +37,9 @@ h1 {
 
 span {
 	display: block;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }

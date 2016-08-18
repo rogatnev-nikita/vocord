@@ -24,31 +24,59 @@
     <header class="header">
         <div class="header__container container">
             <div class="row">
-                <div class="col-xs-12">
-                    <nav class="navbar navbar-inverse">
-                        <div class="container-fluid">
-                            <div class="header__navbar">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header__navbar">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <a class="header__logo navbar-brand" href="#"><img src="./img/header/header__logo.png" c></a>
-                            </div>
-                            <div class="collapse navbar-collapse" id="header__navbar">
-                                <ul class="nav navbar-nav">
-                                    <li><a href="#">Наша компания</a></li>
-                                    <li class="active"><a href="#">Продукты</a></li>
-                                    <li><a href="#">Поддержка</a></li>
-                                </ul>
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="#"><span class="glyphicon fa fa-envelope"></span></a></li>
-                                    <li><a href="#"><span class="glyphicon fa fa-search"></span></a></li>
-                                </ul>
-                            </div>
+                <nav class="col-xs-12 navbar">
+                    <div class="container-fluid">
+                        <div class="header__navbar">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header__navbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <h3 class="header__mobile visible-xs"><a href="tel:+74957872626">+7 (495) 787 26 26</a></h3>
+                            <ul class="header__language nav visible-xs list-unstyled">
+                                <li><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU <span class="caret"></span></a>
+                                    <ul class="dropdown-menu list-unstyled">
+                                        <li><a href="#">RU</a></li>
+                                        <li><a href="#">EN</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a class="header__logo navbar-brand" href="#"><img src="./img/header/header__logo.png" alt="vocord logo"></a>
                         </div>
-                    </nav>
-                </div>
+                        <div class="collapse navbar-collapse" id="header__navbar">
+                            <ul class="header__main-menu nav navbar-nav">
+                                <li><a href="#">Наша компания</a></li>
+                                <li class="active"><a href="#">Продукты</a>
+                                    <ul class="header__products-menu visible-xs list-unstyled">
+                                        <li><a href="./faces.html">Распознавание лиц</a></li>
+                                        <li><a href="./number.html">Распознавание номеров</a></li>
+                                        <li><a href="./video.html">Видеоаналитика и видеонаблюдение</a></li>
+                                        <li><a href="./analysis.html">Анализ и обработка фото и видео</a></li>
+                                        <li><a href="./audio.html">Аудиорегистрация</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Поддержка</a></li>
+                                <li class="visible-xs"><a href="#">Партнерам</a></li>
+                                <li class="visible-xs"><a href="#">Проекты</a></li>
+                                <li class="visible-xs"><a href="#">Пресс-Центр</a></li>
+                                <li class="visible-xs"><a href="#">Написать нам</a></li>
+                                <li class="visible-xs"><a href="#">Где купить?</a></li>
+                                <li class="visible-xs"><a href="#">Прайс-Лист</a></li>
+                                <li class="visible-xs"><a href="#">Поиск</a></li>
+                            </ul>
+                            <ul class="header__sub-menu nav navbar-nav navbar-right hidden-xs">
+                                <li><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">RU</a></li>
+                                        <li><a href="#">EN</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><span class="fa fa-envelope"></span></a></li>
+                                <li><a href="#"><span class="fa fa-search"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
@@ -56,11 +84,34 @@
 
     <!-- MAIN -->
     <main class="main">
-        <div class="main__container container">
-            <div class="row">
 
+        <!-- CATALOG -->
+        <div class="catalog container">
+            <div class="row">
+                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <img src="./img/catalog/catalog__faces--static.png" alt="Распознавание лиц">
+                    <span>Распознавание лиц</span>
+                </a>
+                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <img src="./img/catalog/catalog__number--static.png" alt="Распознавание номеров">
+                    <span>Распознавание номеров</span>
+                </a>
+                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <img src="./img/catalog/catalog__video--static.png" alt="Видеонаблюдение и видеоаналитика">
+                    <span>Видеонаблюдение и видеоаналитика</span>
+                </a>
+                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <img src="./img/catalog/catalog__analysis--static.png" alt="Анализ подлинности фото и видео">
+                    <span>Анализ подлинности фото и видео</span>
+                </a>
+                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                    <img src="./img/catalog/catalog__audio--static.png" alt="Запись аудиопотоков">
+                    <span>Запись аудиопотоков</span>
+                </a>
             </div>
         </div>
+        <!-- CATALOG END -->
+
     </main>
     <!-- MAIN END -->
 
