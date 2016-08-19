@@ -14,7 +14,6 @@ $(document).ready(function () {
 	$(".navbar-toggle").click(function () {
 		$(".header__logo").toggleClass("hidden");
 		$(".navbar-toggle").toggleClass("navbar-toggle--active");
-		$("body").toggleClass("body--invert");
 	});
 
 	// Header search field

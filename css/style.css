@@ -13,9 +13,6 @@ body {
   font-size: 16px;
   line-height: 22px;
 }
-.body--invert {
-  background-color: #e4e4e4;
-}
 h1,
 h2,
 h3,
@@ -70,6 +67,10 @@ img {
     padding: 0;
   }
 }
+.header__main-menu {
+  margin-top: 0;
+  box-shadow: 0 0 15px 0 #8c8c8c;
+}
 .header__main-menu > li {
   padding: 0;
 }
@@ -85,12 +86,12 @@ img {
   color: #61aa45;
   background: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .header__main-menu > li > a {
     padding: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .header__main-menu > li {
     padding: 15px;
   }
@@ -101,6 +102,7 @@ img {
 @media (min-width: 1200px) {
   .header__main-menu {
     padding: 15px 15px 15px 140px;
+    box-shadow: none;
   }
 }
 .header__products-menu {

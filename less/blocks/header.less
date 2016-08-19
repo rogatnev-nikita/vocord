@@ -40,6 +40,10 @@
 }
 
 .header__main-menu {
+	margin-top: 0;
+
+	box-shadow: 0 0 15px 0 #8c8c8c;
+
 	& > li {
 		padding: 0;
 
@@ -61,12 +65,12 @@
 				background: none;
 			}
 
-			@media (min-width: @screen-sm) {
+			@media (min-width: @screen-lg) {
 				padding: 0;
 			}
 		}
 
-		@media (min-width: @screen-sm) {
+		@media (min-width: @screen-lg) {
 			padding: 15px;
 		}
 	}
@@ -79,6 +83,8 @@
 
 	@media (min-width: @screen-lg) {
 		padding: 15px 15px 15px 140px;
+
+		box-shadow: none;
 	}
 }
 
