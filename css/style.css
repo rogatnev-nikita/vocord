@@ -306,16 +306,9 @@ img {
   text-align: center;
   line-height: 1;
 }
-.catalog__item .catalog__item-image {
-  overflow: hidden;
-  width: 100%;
-  max-height: 220px;
-  outline: 1px dashed lightgreen;
-}
 .catalog__item img {
   display: block;
   width: 100%;
-  border: 1px dashed red;
 }
 .catalog__item span {
   text-decoration: none;
