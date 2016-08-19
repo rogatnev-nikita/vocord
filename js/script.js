@@ -19,9 +19,8 @@ $(document).ready(function () {
 	});
 
 	// Header search field
-	$(".header__search a").click(function () {
-		$(".header__search-input, .header__main-menu, .header__sub-menu li:nth-child(1), .header__sub-menu li:nth-child(2)").toggleClass("hidden");
-		$(".header__search").toggleClass("header__search--active");
+	$(".header__sub-menu li:nth-child(3) a").click(function () {
+		$(".header__search-input, .header__main-menu, .header__sub-menu, .header__search").toggleClass("hidden");
 
 		event.preventDefault();
 	});

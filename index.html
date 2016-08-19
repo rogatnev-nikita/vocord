@@ -75,13 +75,19 @@
                                     </ul>
                                 </li>
                                 <li><a href="#"><span class="fa fa-envelope"></span></a></li>
-                                <li class="header__search">
+                                <li>
                                     <a href="#"><span class="fa fa-search"></span></a>
-                                    <form action="#">
-                                        <input id="header__search-input" type="text" class="header__search-input hidden">
-                                    </form>
                                 </li>
                             </ul>
+                            <form action="#" class="header__search hidden">
+                                <input id="header__search-input" type="text" class="header__search-input hidden">
+                                <ul class="header__search-output list-unstyled">
+                                    <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
+                                    <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
+                                    <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
+                                    <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
+                                </ul>
+                            </form>
                         </div>
                     </div>
                 </nav>
@@ -94,26 +100,36 @@
     <main class="main">
 
         <!-- CATALOG -->
-        <div class="catalog container">
+        <div class="catalog container-fluid">
             <div class="row">
-                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <img src="./img/catalog/catalog__faces--static.png" alt="Распознавание лиц">
+                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-4 col-lg-2 col-lg-offset-1">
+                    <div class="catalog__item-image">
+                        <img src="./img/catalog/catalog__faces--static.png" alt="Распознавание лиц">
+                    </div>
                     <span>Распознавание лиц</span>
                 </a>
                 <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <img src="./img/catalog/catalog__number--static.png" alt="Распознавание номеров">
+                    <div class="catalog__item-image">
+                        <img src="./img/catalog/catalog__number--static.png" alt="Распознавание номеров">
+                    </div>
                     <span>Распознавание номеров</span>
                 </a>
-                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="./img/catalog/catalog__video--static.png" alt="Видеонаблюдение и видеоаналитика">
+                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="catalog__item-image">
+                        <img src="./img/catalog/catalog__video--static.png" alt="Видеонаблюдение и видеоаналитика">
+                    </div>
                     <span>Видеонаблюдение и видеоаналитика</span>
                 </a>
-                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <img src="./img/catalog/catalog__analysis--static.png" alt="Анализ подлинности фото и видео">
+                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                    <div class="catalog__item-image">
+                        <img src="./img/catalog/catalog__analysis--static.png" alt="Анализ подлинности фото и видео">
+                    </div>
                     <span>Анализ подлинности фото и видео</span>
                 </a>
                 <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-6 col-lg-2">
-                    <img src="./img/catalog/catalog__audio--static.png" alt="Запись аудиопотоков">
+                    <div class="catalog__item-image">
+                        <img src="./img/catalog/catalog__audio--static.png" alt="Запись аудиопотоков">
+                    </div>
                     <span>Запись аудиопотоков</span>
                 </a>
             </div>

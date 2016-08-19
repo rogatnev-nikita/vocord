@@ -129,6 +129,10 @@ img {
 .header__products-menu .active > a {
   color: #61aa45;
 }
+.header__sub-menu {
+  min-width: 160px;
+  padding: 15px 0;
+}
 .header__sub-menu li a {
   text-transform: uppercase;
   color: #3c3c3b;
@@ -138,10 +142,12 @@ img {
 .header__sub-menu li a:hover {
   text-decoration: none;
   color: #61aa45;
-  background: none;
+  background-color: transparent;
 }
-.header__sub-menu {
-  padding: 15px 0;
+.header__sub-menu .header__search--active a {
+  padding: 0;
+  color: #61aa45;
+  background-color: transparent;
 }
 .header__navbar {
   width: 100%;
@@ -218,31 +224,67 @@ img {
   background-color: #ffffff;
 }
 .header__search {
-  transition: width 0.4s ease-in-out;
-}
-.header__search--active {
   position: absolute !important;
   right: 15px;
   width: 50%;
+  padding: 30px 0 0;
+  transition: width 0.4s ease-in-out;
   font-size: 0;
+  line-height: 0;
 }
-.header__search--active a {
+.header__search a {
   display: inline-block !important;
   width: 10%;
-  padding: 0;
+  margin-top: 3px;
   text-align: center;
-  vertical-align: middle;
-  color: #61aa45;
+  vertical-align: top;
 }
-.header__search--active form {
+.header__search form {
   display: inline-block;
   width: 89%;
-  vertical-align: middle;
+  vertical-align: top;
+  line-height: 0;
 }
-.header__search .header__search-input {
+.header__search-input {
   width: 100%;
+  height: 24px;
+  padding: 3px 5px;
   color: #3c3c3b;
   border: 1px solid #61aa45;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  font-size: 13px;
+  line-height: 1;
+}
+.header__search-input:focus {
+  outline: none;
+}
+.header__search-output {
+  width: 100%;
+  padding: 3px 5px;
+  color: #3c3c3b;
+  border: 1px solid #61aa45;
+  border-top: 0;
+  font-size: 13px;
+  line-height: 1;
+  border-bootom-left-radius: 2px;
+  border-bootom-right-radius: 2px;
+}
+.header__search-result {
+  display: block;
+  width: 100%;
+}
+.header__search-result a {
+  display: block;
+  width: 100%;
+  text-align: left;
+  text-transform: none;
+  color: #8c8c8c;
+}
+.header__search-result a:hover {
+  padding-left: 20px;
+  text-decoration: none;
+  color: #61aa45;
 }
 /* ------------------------------------------ */
 /* MAIN BLOCK
@@ -259,8 +301,16 @@ img {
   text-align: center;
   line-height: 1;
 }
-.catalog__item img {
+.catalog__item .catalog__item-image {
+  overflow: hidden;
   width: 100%;
+  max-height: 220px;
+  outline: 1px dashed lightgreen;
+}
+.catalog__item img {
+  display: block;
+  width: 100%;
+  border: 1px dashed red;
 }
 .catalog__item span {
   text-decoration: none;
