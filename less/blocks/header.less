@@ -6,15 +6,21 @@
 		padding: 0;
 	}
 
-	@media (min-width: @screen-sm) {
+	@media (min-width: @screen-lg) {
 		background-color: @color__white;
+	}
+
+	.header__container {
+		@media (max-width: @screen-lg) {
+			width: 100%;
+		}
 	}
 }
 
 .header__logo {
 	height: auto;
 
-	@media (max-width: @screen-sm) {
+	@media (max-width: @screen-lg) {
 		float: right;
 
 		width: 100%;
@@ -28,7 +34,7 @@
 .navbar {
 	margin: 0;
 
-	@media (max-width: @screen-sm) {
+	@media (max-width: @screen-lg) {
 		padding: 0;
 	}
 }
@@ -150,7 +156,7 @@
 .header__navbar {
 	width: 100%;
 
-	@media (max-width: @screen-sm) {
+	@media (max-width: @screen-lg) {
 		.navbar-toggle {
 			float: left;
 

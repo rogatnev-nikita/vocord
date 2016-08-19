@@ -40,15 +40,20 @@ img {
 .header .container-fluid {
   padding: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .header {
     background-color: #ffffff;
+  }
+}
+@media (max-width: 1200px) {
+  .header .header__container {
+    width: 100%;
   }
 }
 .header__logo {
   height: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .header__logo {
     float: right;
     width: 100%;
@@ -60,7 +65,7 @@ img {
 .navbar {
   margin: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .navbar {
     padding: 0;
   }
@@ -152,7 +157,7 @@ img {
 .header__navbar {
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .header__navbar .navbar-toggle {
     float: left;
     min-width: 70px;
