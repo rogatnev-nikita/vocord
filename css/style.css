@@ -135,6 +135,7 @@ img {
   color: #61aa45;
 }
 .header__sub-menu {
+  display: none;
   min-width: 160px;
   padding: 15px 0;
 }
@@ -153,6 +154,11 @@ img {
   padding: 0;
   color: #61aa45;
   background-color: transparent;
+}
+@media (min-width: 1200px) {
+  .header__sub-menu {
+    display: block;
+  }
 }
 .header__navbar {
   width: 100%;
@@ -231,29 +237,34 @@ img {
 .header__search {
   position: absolute !important;
   right: 15px;
+  display: block;
   width: 50%;
   padding: 30px 0 0;
-  transition: width 0.4s ease-in-out;
+  transition: all 1s ease-in-out;
   font-size: 0;
   line-height: 0;
 }
-.header__search a {
-  display: inline-block !important;
-  width: 10%;
-  margin-top: 3px;
-  text-align: center;
-  vertical-align: top;
+.header__search-block {
+  position: relative;
 }
-.header__search form {
-  display: inline-block;
-  width: 89%;
-  vertical-align: top;
-  line-height: 0;
+.header__search-block .header__search-input-icon {
+  position: absolute;
+  top: 3px;
+  left: -24px;
+  color: #61aa45;
+  font-size: 16px;
 }
-.header__search-input {
+.header__search-block .header__search-close-icon {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  color: #61aa45;
+  font-size: 16px;
+}
+.header__search-block .header__search-input {
   width: 100%;
   height: 24px;
-  padding: 3px 5px;
+  padding: 8px;
   color: #3c3c3b;
   border: 1px solid #61aa45;
   border-top-left-radius: 2px;
@@ -261,19 +272,19 @@ img {
   font-size: 13px;
   line-height: 1;
 }
-.header__search-input:focus {
+.header__search-block .header__search-input:focus {
   outline: none;
 }
-.header__search-output {
+.header__search-block .header__search-output {
   width: 100%;
-  padding: 3px 5px;
+  padding: 8px;
   color: #3c3c3b;
   border: 1px solid #61aa45;
   border-top: 0;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
   font-size: 13px;
   line-height: 1;
-  border-bootom-left-radius: 2px;
-  border-bootom-right-radius: 2px;
 }
 .header__search-result {
   display: block;
@@ -282,6 +293,7 @@ img {
 .header__search-result a {
   display: block;
   width: 100%;
+  padding: 3px 0;
   text-align: left;
   text-transform: none;
   color: #8c8c8c;

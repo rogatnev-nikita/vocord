@@ -18,7 +18,7 @@ $(document).ready(function () {
 	});
 
 	// Header search field
-	$(".header__sub-menu li:nth-child(3) a").click(function () {
+	$(".header__sub-menu li:nth-child(3) a, .header__search-close-icon").click(function () {
 		$(".header__search-input, .header__main-menu, .header__sub-menu, .header__search").toggleClass("hidden");
 		$(".header__search-input").focus();
 		event.preventDefault();

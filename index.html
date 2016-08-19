@@ -66,7 +66,7 @@
                                 <li class="visible-xs"><a href="#">Прайс-Лист</a></li>
                                 <li class="visible-xs"><a href="#">Поиск</a></li>
                             </ul>
-                            <ul class="header__sub-menu nav navbar-nav navbar-right visible-lg">
+                            <ul class="header__sub-menu nav navbar-nav navbar-right">
                                 <li>
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -74,19 +74,23 @@
                                         <li><a href="#">EN</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#"><span class="fa fa-envelope"></span></a></li>
+                                <li><a href="#"><span class="fa fa-envelope-o"></span></a></li>
                                 <li>
                                     <a href="#"><span class="fa fa-search"></span></a>
                                 </li>
                             </ul>
                             <form action="#" class="header__search hidden">
-                                <input id="header__search-input" type="text" class="header__search-input hidden">
-                                <ul class="header__search-output list-unstyled">
-                                    <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
-                                    <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
-                                    <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
-                                    <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
-                                </ul>
+                                <div class="header__search-block">
+                                    <span class="header__search-input-icon fa fa-search"></span>
+                                    <input id="header__search-input" type="text" class="header__search-input hidden">
+                                    <a href="#" class="header__search-close-icon"><span class="fa fa-times"></span></a>
+                                    <ul class="header__search-output list-unstyled">
+                                        <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
+                                        <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
+                                        <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
+                                        <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
+                                    </ul>
+                                </div>
                             </form>
                         </div>
                     </div>
