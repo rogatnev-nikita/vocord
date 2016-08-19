@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
 
     <title>Вокорд. Системы видеонаблюдения, распознавания лиц, фотофиксации нарушений ПДД, аудиорегистрации</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2|Open+Sans&subset=cyrillic" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2%7COpen+Sans&subset=cyrillic" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
@@ -32,8 +32,8 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <h3 class="header__mobile visible-xs"><a href="tel:+74957872626">+7 (495) 787 26 26</a></h3>
-                            <ul class="header__language nav visible-xs list-unstyled">
+                            <h3 class="header__mobile hidden-lg"><a href="tel:+74957872626">+7 (495) 787 26 26</a></h3>
+                            <ul class="header__language nav hidden-lg list-unstyled">
                                 <li>
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU <span class="caret"></span></a>
                                     <ul class="dropdown-menu list-unstyled">
@@ -42,14 +42,14 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <a class="header__logo navbar-brand" href="#"><img src="./img/header/header__logo.png" alt="vocord logo"></a>
+                            <a class="header__logo navbar-brand" href="./index.html"><img src="./img/header/header__logo.png" alt="vocord logo" width="238" height="93"></a>
                         </div>
                         <div class="collapse navbar-collapse" id="header__navbar">
                             <ul class="header__main-menu nav navbar-nav">
                                 <li><a href="#">Наша компания</a></li>
                                 <li class="active">
-                                    <a href="#">Продукты</a>
-                                    <ul class="header__products-menu visible-xs list-unstyled">
+                                    <a href="./index.html">Продукты</a>
+                                    <ul class="header__products-menu hidden-lg list-unstyled">
                                         <li><a href="./faces.html">Распознавание лиц</a></li>
                                         <li><a href="./number.html">Распознавание номеров</a></li>
                                         <li><a href="./video.html">Видеоаналитика и видеонаблюдение</a></li>
@@ -58,15 +58,15 @@
                                     </ul>
                                 </li>
                                 <li><a href="#">Поддержка</a></li>
-                                <li class="visible-xs"><a href="#">Партнерам</a></li>
-                                <li class="visible-xs"><a href="#">Проекты</a></li>
-                                <li class="visible-xs"><a href="#">Пресс-Центр</a></li>
-                                <li class="visible-xs"><a href="#">Написать нам</a></li>
-                                <li class="visible-xs"><a href="#">Где купить?</a></li>
-                                <li class="visible-xs"><a href="#">Прайс-Лист</a></li>
-                                <li class="visible-xs"><a href="#">Поиск</a></li>
+                                <li class="hidden-lg"><a href="#">Партнерам</a></li>
+                                <li class="hidden-lg"><a href="#">Проекты</a></li>
+                                <li class="hidden-lg"><a href="#">Пресс-Центр</a></li>
+                                <li class="hidden-lg"><a href="#">Написать нам</a></li>
+                                <li class="hidden-lg"><a href="#">Где купить?</a></li>
+                                <li class="hidden-lg"><a href="#">Прайс-Лист</a></li>
+                                <li class="hidden-lg"><a href="#">Поиск</a></li>
                             </ul>
-                            <ul class="header__sub-menu nav navbar-nav navbar-right hidden-xs">
+                            <ul class="header__sub-menu nav navbar-nav navbar-right">
                                 <li>
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -74,19 +74,23 @@
                                         <li><a href="#">EN</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#"><span class="fa fa-envelope"></span></a></li>
+                                <li><a href="#"><span class="fa fa-envelope-o"></span></a></li>
                                 <li>
                                     <a href="#"><span class="fa fa-search"></span></a>
                                 </li>
                             </ul>
                             <form action="#" class="header__search hidden">
-                                <input id="header__search-input" type="text" class="header__search-input hidden">
-                                <ul class="header__search-output list-unstyled">
-                                    <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
-                                    <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
-                                    <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
-                                    <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
-                                </ul>
+                                <div class="header__search-block">
+                                    <span class="header__search-input-icon fa fa-search"></span>
+                                    <input id="header__search-input" type="text" class="header__search-input hidden">
+                                    <a href="#" class="header__search-close-icon"><span class="fa fa-times"></span></a>
+                                    <ul class="header__search-output list-unstyled">
+                                        <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
+                                        <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
+                                        <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
+                                        <li class="header__search-result"><a href="#">Поисковая выдача 1</a></li>
+                                    </ul>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -100,40 +104,30 @@
     <main class="main">
 
         <!-- CATALOG -->
-        <div class="catalog container-fluid">
+        <section class="catalog container-fluid">
             <div class="row">
-                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-4 col-lg-2 col-lg-offset-1">
-                    <div class="catalog__item-image">
-                        <img src="./img/catalog/catalog__faces--static.png" alt="Распознавание лиц">
-                    </div>
-                    <span>Распознавание лиц</span>
+                <a href="./faces.html" class="catalog__item col-xs-12 col-sm-4 col-lg-2 col-lg-offset-1">
+                    <img src="./img/catalog/catalog__faces--static.png" alt="Распознавание лиц" width="270" height="200">
+                    <span>Распознавание<br>лиц</span>
                 </a>
-                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="catalog__item-image">
-                        <img src="./img/catalog/catalog__number--static.png" alt="Распознавание номеров">
-                    </div>
-                    <span>Распознавание номеров</span>
+                <a href="./number.html" class="catalog__item col-xs-12 col-sm-4 col-lg-2">
+                    <img src="./img/catalog/catalog__number--static.png" alt="Распознавание номеров" width="270" height="200">
+                    <span>Распознавание<br>номеров</span>
                 </a>
-                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="catalog__item-image">
-                        <img src="./img/catalog/catalog__video--static.png" alt="Видеонаблюдение и видеоаналитика">
-                    </div>
-                    <span>Видеонаблюдение и видеоаналитика</span>
+                <a href="./video.html" class="catalog__item col-xs-12 col-sm-4 col-lg-2">
+                    <img src="./img/catalog/catalog__video--static.png" alt="Видеонаблюдение и видеоаналитика" width="270" height="200">
+                    <span>Видеонаблюдение<br>и видеоаналитика</span>
                 </a>
-                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-6 col-lg-2">
-                    <div class="catalog__item-image">
-                        <img src="./img/catalog/catalog__analysis--static.png" alt="Анализ подлинности фото и видео">
-                    </div>
-                    <span>Анализ подлинности фото и видео</span>
+                <a href="./analysis.html" class="catalog__item col-xs-12 col-sm-4 col-lg-2">
+                    <img src="./img/catalog/catalog__analysis--static.png" alt="Анализ подлинности фото и видео" width="270" height="200">
+                    <span>Анализ подлинности<br>фото и видео</span>
                 </a>
-                <a href="#" class="catalog__item col-xs-12 col-sm-6 col-md-6 col-lg-2">
-                    <div class="catalog__item-image">
-                        <img src="./img/catalog/catalog__audio--static.png" alt="Запись аудиопотоков">
-                    </div>
-                    <span>Запись аудиопотоков</span>
+                <a href="./audio.html" class="catalog__item col-xs-12 col-sm-4 col-lg-2">
+                    <img src="./img/catalog/catalog__audio--static.png" alt="Запись аудиопотоков" width="270" height="200">
+                    <span>Запись<br>аудиопотоков</span>
                 </a>
             </div>
-        </div>
+        </section>
         <!-- CATALOG END -->
 
     </main>
