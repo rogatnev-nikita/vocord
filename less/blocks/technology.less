@@ -1,0 +1,150 @@
+/* ------------------------------------------ */
+/* TECHNOLOGY BLOCK
+/* ------------------------------------------ */
+.technology {
+	position: relative;
+
+	padding-top: 70px;
+	padding-bottom: 70px;
+
+	h1 {
+		color: @color__white;
+	}
+
+	p {
+		text-align: center;
+
+		color: @color__white;
+
+		&.text-left {
+			@media (min-width: @screen-md) {
+				text-align: left;
+			}
+		}
+	}
+
+	&--faces {
+		background: @color__technology-bg url(../img/technology/faces/technology--faces.png) no-repeat;
+		background-size: cover;
+
+		&:before {
+			position: absolute;
+			top: 0;
+
+			display: block;
+
+			width: 5px;
+			height: 100%;
+			margin-left: -15px;
+
+			content: "";
+
+			background-image: linear-gradient(@color__technology-line__1 0%, @color__technology-line__1 25%, @color__technology-line__2 25%, @color__technology-line__2 50%, @color__technology-line__3 50%, @color__technology-line__3 75%, @color__technology-line__4 75%, @color__technology-line__4 100%);
+		}
+	}
+}
+
+.technology__slider-navigation {
+	ul {
+		position: relative;
+
+		display: flex;
+
+		margin-bottom: 20px;
+
+
+		&:before {
+			position: absolute;
+			top: 50%;
+
+			display: block;
+
+			width: 99%;
+			height: 2px;
+			margin-top: -2px;
+
+			content: "";
+
+			background: @color__green;
+		}
+	}
+
+	li {
+		width: 33%;
+		padding: 0;
+
+		a {
+			display: block;
+
+			width: 55px;
+			height: 55px;
+			padding: 2px 0 0;
+
+			text-align: center;
+
+			color: @color__green;
+			border: 2px solid @color__green;
+			border-radius: 50%;
+			background: @color__technology-bg;
+
+			font-family: "Open Sans", Arial, sans-serif;
+			font-size: 45px;
+			font-weight: 100;
+			line-height: 1;
+
+			&:hover {
+				text-decoration: none;
+
+				color: @color__technology-bg;
+				background: @color__green;
+
+				font-weight: 800;
+			}
+		}
+
+		&.active {
+			a {
+				text-decoration: none;
+
+				color: @color__technology-bg;
+				background: @color__green;
+
+				font-weight: 800;
+			}
+		}
+
+		&:nth-child(1) {
+			a {
+				float: left;
+			}
+		}
+
+		&:nth-child(2) {
+			a {
+				margin: 0 auto;
+			}
+		}
+
+		&:nth-child(3) {
+			a {
+				float: right;
+			}
+		}
+	}
+}
+
+.technology__slides {
+	text-align: center;
+
+	h2 {
+		color: @color__green;
+
+		font-size: 30px;
+		font-weight: normal;
+		line-height: auto;
+	}
+
+	img {
+		margin: 40px auto 0;
+	}
+}
