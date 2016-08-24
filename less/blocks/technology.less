@@ -114,20 +114,72 @@
 		}
 
 		&:nth-child(1) {
+			position: absolute;
+			left: -25px;
+
+			width: auto;
+
 			a {
-				float: left;
+				width: auto;
+				height: auto;
+				padding: 0;
+
+				border: 0;
+				background: none;
+
+				svg {
+					stroke: #58595b;
+				}
+
+				&:hover {
+					svg {
+						stroke: @color__green;
+					}
+				}
 			}
 		}
 
 		&:nth-child(2) {
 			a {
-				margin: 0 auto;
+				float: left;
 			}
 		}
 
 		&:nth-child(3) {
 			a {
+				margin: 0 auto;
+			}
+		}
+
+		&:nth-child(4) {
+			a {
 				float: right;
+			}
+		}
+
+		&:nth-child(5) {
+			position: absolute;
+			right: -25px;
+
+			width: auto;
+
+			a {
+				width: auto;
+				height: auto;
+				padding: 0;
+
+				border: 0;
+				background: none;
+
+				svg {
+					stroke: #58595b;
+				}
+
+				&:hover {
+					svg {
+						stroke: @color__green;
+					}
+				}
 			}
 		}
 	}

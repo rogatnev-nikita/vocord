@@ -488,14 +488,50 @@ img {
   background: #61aa45;
   font-weight: 800;
 }
+.technology__slider-navigation li:nth-child(1) {
+  position: absolute;
+  left: -25px;
+  width: auto;
+}
 .technology__slider-navigation li:nth-child(1) a {
-  float: left;
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+.technology__slider-navigation li:nth-child(1) a svg {
+  stroke: #58595b;
+}
+.technology__slider-navigation li:nth-child(1) a:hover svg {
+  stroke: #61aa45;
 }
 .technology__slider-navigation li:nth-child(2) a {
-  margin: 0 auto;
+  float: left;
 }
 .technology__slider-navigation li:nth-child(3) a {
+  margin: 0 auto;
+}
+.technology__slider-navigation li:nth-child(4) a {
   float: right;
+}
+.technology__slider-navigation li:nth-child(5) {
+  position: absolute;
+  right: -25px;
+  width: auto;
+}
+.technology__slider-navigation li:nth-child(5) a {
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+.technology__slider-navigation li:nth-child(5) a svg {
+  stroke: #58595b;
+}
+.technology__slider-navigation li:nth-child(5) a:hover svg {
+  stroke: #61aa45;
 }
 .technology__slides {
   text-align: center;

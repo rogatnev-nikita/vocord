@@ -33,4 +33,12 @@ $(document).ready(function () {
 		event.preventDefault();
 	});
 
+	// Technology slider navigation arrows
+	$('.technology__slider-arrow--right').click(function () {
+		$('.technology__slider-tablist li').filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
+	});
+	$('.technology__slider-arrow--left').click(function () {
+		$('.technology__slider-tablist li').filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
+	});
+
 });
