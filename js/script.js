@@ -41,4 +41,14 @@ $(document).ready(function () {
 		$('.technology__slider-tablist li').filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
 	});
 
+	// Analysis page technology block image animations
+	$(".technology__slides-animated img").each(function (e) {
+		var src = $(this).attr("src");
+		$(this).hover(function () {
+			$(this).attr("src", src.replace(".png", "--tooltip.png"));
+		}, function () {
+			$(this).attr("src", src);
+		});
+	});
+
 });
