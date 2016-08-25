@@ -622,6 +622,12 @@ img {
     background-size: auto, 100% auto;
   }
 }
+@media (min-width: 992px) {
+  .products--analysis {
+    background: url(../img/products/analysis/products--analysis-bg1.png) no-repeat left top;
+    background-size: auto;
+  }
+}
 .products__slider {
   margin-top: 20px;
 }
@@ -733,7 +739,7 @@ img {
   }
 }
 .products__areas-header {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 .products__areas span {
   display: block;
