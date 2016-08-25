@@ -1,0 +1,253 @@
+/* ------------------------------------------ */
+/* PRODUCTS BLOCK
+/* ------------------------------------------ */
+.products {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	text-align: center;
+
+	h1 {
+		white-space: nowrap;
+		text-transform: none;
+
+		color: @color__green;
+
+		span {
+			display: inline;
+
+			text-transform: uppercase;
+
+			line-height: 1;
+		}
+	}
+
+	h2 {
+		color: @color__darker-grey;
+
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	h3 {
+		color: @color__grey;
+
+		font-size: 25px;
+		font-style: italic;
+		line-height: auto;
+	}
+
+	&--faces {
+		background: url(../img/products/faces/products--faces-bg2.png) no-repeat center bottom;
+		background-size: 100% auto;
+
+		@media (min-width: @screen-md) {
+			background: url(../img/products/faces/products--faces-bg1.png) no-repeat left top,
+			url(../img/products/faces/products--faces-bg2.png) no-repeat center bottom;
+			background-size: auto, 100% auto;
+		}
+	}
+
+	&--analysis {
+		@media (min-width: @screen-md) {
+			background: url(../img/products/analysis/products--analysis-bg1.png) no-repeat left top;
+			background-size: auto;
+		}
+	}
+
+	&--audio {
+		background: url(../img/products/audio/products--audio-bg2.png) no-repeat center center;
+		background-size: 100% auto;
+
+		@media (min-width: @screen-md) {
+			background: url(../img/products/audio/products--audio-bg1.png) no-repeat left top,
+			url(../img/products/audio/products--audio-bg2.png) no-repeat center center;
+			background-size: auto, 100% auto;
+		}
+	}
+
+	&--number {
+		background: url(../img/products/number/products--number-bg2.png) no-repeat center top;
+		background-size: 100% auto;
+
+		@media (min-width: @screen-md) {
+			background: url(../img/products/number/products--number-bg1.png) no-repeat 100px top,
+			url(../img/products/number/products--number-bg2.png) no-repeat center top;
+			background-size: auto, 100% auto;
+		}
+	}
+}
+
+.products__slider {
+	margin-top: 20px;
+
+	.products__slides-item {
+		h2 {
+			color: @color__grey;
+
+			font-size: 18px;
+			font-style: italic;
+			line-height: 1;
+
+			@media (min-width: @screen-sm) {
+				font-size: 25px;
+			}
+		}
+	}
+
+	.products__slides-link {
+		margin: 20px;
+
+		a {
+			display: block;
+
+			padding: 8px 17px;
+
+			text-align: center;
+			white-space: nowrap;
+			text-decoration: none;
+			text-transform: uppercase;
+
+			color: @color__green;
+			border: 3px solid @color__green;
+			border-radius: 35px;
+
+			font-size: 16px;
+			line-height: 1;
+
+			&:hover {
+				text-decoration: none;
+
+				color: @color__white;
+				background-color: @color__green;
+			}
+
+			@media (min-width: @screen-sm) {
+				display: inline;
+			}
+		}
+
+		@media (min-width: @screen-sm) {
+			margin: 60px auto 20px;
+		}
+	}
+
+	.products__presentation {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 55px;
+
+		a {
+			position: relative;
+
+			padding: 0;
+
+			text-decoration: underline;
+			text-transform: none;
+
+			color: @color__dark-grey;
+			border: 0;
+			border-radius: 0;
+
+			font-size: 14px;
+			font-style: italic;
+			line-height: 16px;
+
+			&:before {
+				position: absolute;
+				left: -40px;
+
+				display: block;
+
+				width: 30px;
+				height: 28px;
+
+				content: "";
+
+				background: url(../img/products/adobe.png) no-repeat;
+				background-size: 100%;
+			}
+
+			&:hover {
+				text-decoration: none;
+
+				color: @color__dark-grey;
+				background-color: transparent;
+			}
+		}
+	}
+
+	.products__slider-arrow {
+		top: 50%;
+
+		width: auto;
+		height: 170px;
+		margin-top: -85px;
+
+		background: transparent;
+
+		@media (max-width: @screen-md) {
+			display: none;
+		}
+	}
+
+	.products__slider-indicators {
+		position: relative;
+		bottom: auto;
+		left: 0;
+
+		display: block;
+
+		width: 100%;
+		margin: 0;
+		padding-bottom: 20px;
+
+		text-align: center;
+
+		li {
+			display: inline-block;
+
+			width: 19px;
+			height: 19px;
+			margin: 0 10px;
+
+			border: 1px solid #bcbec0;
+			background-color: @color__white;
+
+			&.active {
+				background-color: #bcbec0;
+			}
+
+			@media (min-width: @screen-sm) {
+				width: 9px;
+				height: 9px;
+				margin: 0 4px;
+			}
+		}
+	}
+
+	@media (min-width: @screen-sm) {
+		margin-top: 50px;
+	}
+}
+
+.products__areas-header {
+	margin-top: 80px;
+}
+
+.products__areas {
+	span {
+		display: block;
+
+		margin-top: 20px;
+
+		color: @color__grey;
+
+		font-size: 19px;
+		line-height: 1;
+	}
+
+	.products__areas-item {
+		margin-top: 40px;
+	}
+}
