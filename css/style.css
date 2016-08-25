@@ -602,7 +602,7 @@ img {
   line-height: 1;
 }
 .products h2 {
-  color: #8c8c8c;
+  color: #808285;
   font-size: 16px;
   line-height: 22px;
 }
@@ -696,7 +696,7 @@ img {
 .products__slider .products__presentation {
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 65px;
+  padding-left: 55px;
 }
 .products__slider .products__presentation a {
   position: relative;
@@ -707,11 +707,12 @@ img {
   border: 0;
   border-radius: 0;
   font-size: 14px;
+  font-style: italic;
   line-height: 16px;
 }
 .products__slider .products__presentation a:before {
   position: absolute;
-  left: -45px;
+  left: -40px;
   display: block;
   width: 30px;
   height: 28px;
