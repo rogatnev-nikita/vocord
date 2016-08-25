@@ -16,6 +16,8 @@
 	margin: 20px 0;
 
 	a {
+		display: block;
+
 		padding: 12px 20px;
 
 		text-align: center;
@@ -36,10 +38,14 @@
 			color: @color__white;
 			background-color: @color__green;
 		}
+
+		@media (min-width: @screen-sm) {
+			display: inline;
+		}
 	}
 
 	.intro__link {
-		margin: 20px 0;
+		margin: 10px 0;
 
 		text-align: center;
 
@@ -55,6 +61,10 @@
 			&.text-center {
 				text-align: center;
 			}
+		}
+
+		@media (min-width: @screen-sm) {
+			margin: 20px 0;
 		}
 	}
 }
