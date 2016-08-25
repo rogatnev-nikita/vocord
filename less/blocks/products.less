@@ -37,7 +37,6 @@
 		line-height: auto;
 	}
 
-
 	&--faces {
 		background: url(../img/products/faces/products--faces-bg2.png) no-repeat center bottom;
 		background-size: 100% auto;
@@ -55,10 +54,46 @@
 			background-size: auto;
 		}
 	}
+
+	&--audio {
+		background: url(../img/products/audio/products--audio-bg2.png) no-repeat center center;
+		background-size: 100% auto;
+
+		@media (min-width: @screen-md) {
+			background: url(../img/products/audio/products--audio-bg1.png) no-repeat left top,
+			url(../img/products/audio/products--audio-bg2.png) no-repeat center center;
+			background-size: auto, 100% auto;
+		}
+	}
+
+	&--number {
+		background: url(../img/products/number/products--number-bg2.png) no-repeat center top;
+		background-size: 100% auto;
+
+		@media (min-width: @screen-md) {
+			background: url(../img/products/number/products--number-bg1.png) no-repeat 100px top,
+			url(../img/products/number/products--number-bg2.png) no-repeat center top;
+			background-size: auto, 100% auto;
+		}
+	}
 }
 
 .products__slider {
 	margin-top: 20px;
+
+	.products__slides-item {
+		h2 {
+			color: @color__grey;
+
+			font-size: 18px;
+			font-style: italic;
+			line-height: 1;
+
+			@media (min-width: @screen-sm) {
+				font-size: 25px;
+			}
+		}
+	}
 
 	.products__slides-link {
 		margin: 20px;
@@ -66,7 +101,7 @@
 		a {
 			display: block;
 
-			padding: 12px 20px;
+			padding: 8px 17px;
 
 			text-align: center;
 			white-space: nowrap;
