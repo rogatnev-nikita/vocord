@@ -366,11 +366,11 @@ img {
   color: #3c3c3b;
 }
 .intro__links {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .intro__links a {
   display: block;
-  padding: 12px 20px;
+  padding: 8px 20px;
   text-align: center;
   white-space: nowrap;
   text-decoration: none;
@@ -445,6 +445,11 @@ img {
     text-align: left;
   }
 }
+@media (min-width: 992px) {
+  .technology p {
+    margin-top: 30px;
+  }
+}
 .technology--faces {
   background: #222629 url(../img/technology/faces/technology--faces.png) no-repeat;
   background-size: cover;
@@ -472,6 +477,10 @@ img {
   height: 100%;
   content: "";
   background-image: linear-gradient(#02abce 0%, #02abce 25%, #a2499b 25%, #a2499b 50%, #ee741f 50%, #ee741f 75%, #61aa45 75%, #61aa45 100%);
+}
+.technology__slider-navigation {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .technology__slider-navigation ul {
   position: relative;
@@ -601,6 +610,11 @@ img {
   text-transform: uppercase;
   line-height: 1;
 }
+@media (min-width: 768px) {
+  .products h1 {
+    margin-bottom: 10px;
+  }
+}
 .products h2 {
   color: #808285;
   font-size: 16px;
@@ -659,6 +673,7 @@ img {
 }
 @media (min-width: 768px) {
   .products__slider .products__slides-item h2 {
+    margin-bottom: 10px;
     font-size: 25px;
   }
 }
@@ -690,7 +705,7 @@ img {
 }
 @media (min-width: 768px) {
   .products__slider .products__slides-link {
-    margin: 60px auto 20px;
+    margin: 40px auto 30px;
   }
 }
 .products__slider .products__presentation {
@@ -744,7 +759,7 @@ img {
   display: block;
   width: 100%;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-align: center;
 }
 .products__slider .products__slider-indicators li {
@@ -771,7 +786,7 @@ img {
   }
 }
 .products__areas-header {
-  margin-top: 80px;
+  margin-top: 90px;
 }
 .products__areas span {
   display: block;
@@ -796,7 +811,7 @@ img {
 }
 @media (min-width: 992px) {
   .promo {
-    padding-top: 380px;
+    padding-top: 370px;
     padding-bottom: 80px;
   }
 }
@@ -808,6 +823,12 @@ img {
 }
 .promo__text h1 {
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  .promo__text h1 {
+    margin-bottom: 30px;
+    line-height: 1;
+  }
 }
 .promo__text p {
   color: #ffffff;
@@ -821,7 +842,7 @@ img {
 }
 .promo__text a {
   display: block;
-  padding: 12px 20px;
+  padding: 8px 20px;
   text-align: center;
   white-space: nowrap;
   text-decoration: none;
