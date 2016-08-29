@@ -976,9 +976,29 @@ img {
 /* MAP BLOCK
 /* ------------------------------------------ */
 .map {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  color: #ffffff;
   background-color: #222629;
+}
+.map h1 {
+  margin: 0;
+  text-align: left;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.map .map__row {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .map .map__row {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+.map .map__aside {
+  padding: 100px 30px;
+  background-color: #4d4d4f;
 }
 /* ------------------------------------------ */
 /* FOOTER BLOCK
