@@ -5,7 +5,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px dashed lightgrey;
 }
 body {
   color: #3c3c3b;
@@ -45,12 +44,21 @@ span {
 }
 p {
   margin: 20px 0;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
 }
 img {
   max-width: 100%;
   height: auto;
+}
+.row-eq-height {
+  display: -ms-flexbox;
+  display: flex;
 }
 /* ------------------------------------------ */
 /* HEADER BLOCK
@@ -451,7 +459,7 @@ img {
   }
 }
 .technology--faces {
-  background: #222629 url(../img/technology/faces/technology--faces.png) no-repeat;
+  background: #222629 url(../img/technology/faces/technology__bg.png) no-repeat;
   background-size: cover;
 }
 .technology--faces:before {
@@ -465,18 +473,118 @@ img {
   background-image: linear-gradient(#02abce 0%, #02abce 25%, #a2499b 25%, #a2499b 50%, #ee741f 50%, #ee741f 75%, #61aa45 75%, #61aa45 100%);
 }
 .technology--analysis {
-  background: #222629 url(../img/technology/faces/technology--analysis.png) no-repeat;
+  background: #222629 url(../img/technology/analysis/technology__bg.png) no-repeat;
   background-size: cover;
 }
 .technology--analysis:after {
   position: absolute;
   top: 0;
-  right: 0;
   display: block;
   width: 5px;
   height: 100%;
   content: "";
   background-image: linear-gradient(#02abce 0%, #02abce 25%, #a2499b 25%, #a2499b 50%, #ee741f 50%, #ee741f 75%, #61aa45 75%, #61aa45 100%);
+}
+.technology--number {
+  background: #222629 url(../img/technology/number/technology__bg.png) repeat;
+}
+.technology--number:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 5px;
+  content: "";
+  background-image: linear-gradient(to left, #02abce 0%, #02abce 25%, #a2499b 25%, #a2499b 50%, #ee741f 50%, #ee741f 75%, #61aa45 75%, #61aa45 100%);
+}
+.technology--number .technology__slider-icon-navigation {
+  background: url(../img/technology/number/technology__slider-navigation--mobilebg.svg) repeat-y;
+  background-position: center top;
+  background-size: 40%;
+}
+@media (min-width: 1200px) {
+  .technology--number .technology__slider-icon-navigation {
+    background: url(../img/technology/number/technology__slider-navigation--bg.svg) no-repeat;
+    background-size: 89px;
+  }
+}
+.technology--iconslider {
+  padding: 0 15px;
+}
+.technology--iconslider .technology__slides {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.technology__slider-icon-navigation {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.technology__slider-icon-navigation ul {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+}
+@media (min-width: 1200px) {
+  .technology__slider-icon-navigation ul {
+    min-width: 100px;
+    max-width: 100px;
+  }
+}
+.technology__slider-icon-navigation li {
+  padding: 0;
+}
+.technology__slider-icon-navigation li.active a svg {
+  fill: #61aa45;
+}
+@media (min-width: 992px) {
+  .technology__slider-icon-navigation li:nth-child(even) a {
+    transform: translateX(15px);
+  }
+  .technology__slider-icon-navigation li:nth-child(odd) a {
+    transform: translateX(-15px);
+  }
+}
+.technology__slider-icon-navigation li:first-child a,
+.technology__slider-icon-navigation li:last-child a {
+  max-width: 32px;
+  margin: 0 auto;
+  padding: 5px;
+  transform: none;
+}
+.technology__slider-icon-navigation li:first-child a svg,
+.technology__slider-icon-navigation li:last-child a svg {
+  fill: none;
+}
+.technology__slider-icon-navigation li:first-child a svg polyline,
+.technology__slider-icon-navigation li:last-child a svg polyline {
+  stroke: #61aa45;
+}
+.technology__slider-icon-navigation li:first-child a:hover svg polyline,
+.technology__slider-icon-navigation li:last-child a:hover svg polyline {
+  stroke: #ffffff;
+}
+.technology__slider-icon-navigation a {
+  display: block;
+  width: 100%;
+  max-width: 54px;
+  margin: 25px auto;
+  font-size: 0;
+  line-height: 0;
+}
+.technology__slider-icon-navigation a svg {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  fill: #222629;
+}
+.technology__slider-icon-navigation a:hover svg {
+  fill: #61aa45;
 }
 .technology__slider-navigation {
   margin-top: 20px;
@@ -590,6 +698,7 @@ img {
   }
 }
 .technology__slides img {
+  width: 100%;
   margin: 40px auto 0;
 }
 /* ------------------------------------------ */
