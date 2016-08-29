@@ -784,6 +784,65 @@ img {
   margin-top: 40px;
 }
 /* ------------------------------------------ */
+/* PROMO BLOCK
+/* ------------------------------------------ */
+.promo {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  background: url(../img/promo/promo__bg.jpg) no-repeat center top;
+  background-size: cover;
+}
+@media (min-width: 992px) {
+  .promo {
+    padding-top: 380px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .promo {
+    background: url(../img/promo/promo__bg.jpg) no-repeat center center;
+    background-size: 100% auto;
+  }
+}
+.promo__text h1 {
+  color: #ffffff;
+}
+.promo__text p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+}
+@media (min-width: 992px) {
+  .promo__text p {
+    margin-bottom: 60px;
+  }
+}
+.promo__text a {
+  display: block;
+  padding: 12px 20px;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #61aa45;
+  border: 3px solid #61aa45;
+  border-radius: 35px;
+  font-size: 16px;
+  line-height: 1;
+}
+.promo__text a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #61aa45;
+}
+@media (min-width: 768px) {
+  .promo__text a {
+    display: inline;
+  }
+}
+/* ------------------------------------------ */
 /* MAP BLOCK
 /* ------------------------------------------ */
 .map {
