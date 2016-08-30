@@ -114,6 +114,72 @@
 
 			background-image: linear-gradient(to left, @color__technology-line__1 0%, @color__technology-line__1 25%, @color__technology-line__2 25%, @color__technology-line__2 50%, @color__technology-line__3 50%, @color__technology-line__3 75%, @color__technology-line__4 75%, @color__technology-line__4 100%);
 		}
+
+		@media (min-width: @screen-lg) {
+			.technology__slider-icon-navigation {
+				li {
+					position: relative;
+					z-index: 1;
+
+					&:nth-child(2) {
+						&:after {
+							position: absolute;
+							z-index: -1;
+
+							display: block;
+
+							width: 70px;
+							height: 135px;
+							margin-top: -40px;
+							margin-left: -20px;
+
+							content: "";
+
+							background: url(../img/technology/audio/technology__slider-icon-navigation--bg1.svg) no-repeat;
+							background-size: contain;
+						}
+					}
+
+					&:nth-child(3) {
+						&:after {
+							position: absolute;
+							z-index: -1;
+
+							display: block;
+
+							width: 85px;
+							height: 165px;
+							margin-top: -40px;
+							margin-left: 110px;
+
+							content: "";
+
+							background: url(../img/technology/audio/technology__slider-icon-navigation--bg2.svg) no-repeat;
+							background-size: contain;
+						}
+					}
+
+					&:nth-child(4) {
+						&:after {
+							position: absolute;
+							z-index: -1;
+
+							display: block;
+
+							width: 150px;
+							height: 204px;
+							margin-top: -40px;
+							margin-left: -23px;
+
+							content: "";
+
+							background: url(../img/technology/audio/technology__slider-icon-navigation--bg3.svg) no-repeat;
+							background-size: contain;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	&--iconslider {
@@ -242,6 +308,14 @@
 		}
 
 		li {
+			&:first-child {
+				margin-bottom: 20px;
+			}
+
+			&:last-child {
+				margin-top: 20px;
+			}
+
 			&:not(:first-child):not(:last-child) {
 				display: block;
 
@@ -256,15 +330,23 @@
 
 					transform: none !important;
 
-					border: 2px solid transparent;
+					border: 1px solid transparent;
 					border-radius: 50%;
 
 					&:hover {
-						border: 2px solid @color__white;
+						border: 1px solid @color__white;
+
+						@media (min-width: @screen-sm) {
+							border: 2px solid @color__white;
+						}
 
 						@media (min-width: @screen-lg) {
 							border: 4px solid @color__white;
 						}
+					}
+
+					@media (min-width: @screen-sm) {
+						border: 2px solid transparent;
 					}
 
 					@media (min-width: @screen-md) {
@@ -294,13 +376,17 @@
 					fill: none;
 
 					@media (min-width: @screen-lg) {
-						max-width: 50%;
+						max-width: 90px;
 					}
 				}
 
 				&.active {
 					a {
-						border: 2px solid @color__white;
+						border: 1px solid @color__white;
+
+						@media (min-width: @screen-sm) {
+							border: 2px solid @color__white;
+						}
 
 						@media (min-width: @screen-lg) {
 							border: 4px solid @color__white;
