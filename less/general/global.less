@@ -6,7 +6,7 @@
 	margin: 0;
 	padding: 0;
 
-	outline: 1px dashed lightgrey;
+	//outline: 1px dashed lightgrey;
 }
 
 body {
@@ -56,11 +56,19 @@ span {
 p {
 	margin: 20px 0;
 
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 22px;
+
+	@media (min-width: @screen-sm) {
+		font-size: 16px;
+	}
 }
 
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+.row-eq-height {
+	display: flex;
 }

@@ -36,9 +36,19 @@ $(document).ready(function () {
 	// Technology slider navigation arrows
 	$('.technology__slider-arrow--right').click(function () {
 		$('.technology__slider-tablist li').filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
+		event.preventDefault();
 	});
 	$('.technology__slider-arrow--left').click(function () {
 		$('.technology__slider-tablist li').filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
+		event.preventDefault();
+	});
+	$('.technology__slider-arrow--top').click(function () {
+		$('.technology__slider-tablist li').filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
+		event.preventDefault();
+	});
+	$('.technology__slider-arrow--bottom').click(function () {
+		$('.technology__slider-tablist li').filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
+		event.preventDefault();
 	});
 
 	// Analysis page technology block image animations

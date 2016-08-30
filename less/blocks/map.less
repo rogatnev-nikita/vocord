@@ -2,8 +2,32 @@
 /* MAP BLOCK
 /* ------------------------------------------ */
 .map {
-	padding-top: 60px;
-	padding-bottom: 60px;
-
+	color: @color__white;
 	background-color: @color__technology-bg;
+
+	h1 {
+		margin: 0;
+
+		text-align: left;
+
+		color: @color__white;
+
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 30px;
+	}
+
+	.map__row {
+		margin: 0;
+
+		@media (max-width: @screen-sm) {
+			flex-direction: column;
+		}
+	}
+
+	.map__aside {
+		padding: 100px 30px;
+
+		background-color: @color__map-aside;
+	}
 }
