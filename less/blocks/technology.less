@@ -96,6 +96,26 @@
 		}
 	}
 
+	&--audio {
+		background: @color__technology-bg url(../img/technology/audio/technology__bg.png) no-repeat center center;
+		background-size: 100% auto;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			display: block;
+
+			width: 100%;
+			height: 5px;
+
+			content: "";
+
+			background-image: linear-gradient(to left, @color__technology-line__1 0%, @color__technology-line__1 25%, @color__technology-line__2 25%, @color__technology-line__2 50%, @color__technology-line__3 50%, @color__technology-line__3 75%, @color__technology-line__4 75%, @color__technology-line__4 100%);
+		}
+	}
+
 	&--iconslider {
 		padding: 0 15px;
 
@@ -201,6 +221,101 @@
 		&:hover {
 			svg {
 				fill: @color__green;
+			}
+		}
+	}
+
+	&--rounded {
+		ul {
+			min-width: 60px;
+			margin: 0 auto;
+
+			@media (min-width: @screen-md) {
+				min-width: 100px;
+				max-width: 100px;
+			}
+
+			@media (min-width: @screen-lg) {
+				min-width: 150px;
+				max-width: 150px;
+			}
+		}
+
+		li {
+			&:not(:first-child):not(:last-child) {
+				display: block;
+
+				margin: 20px auto;
+
+				a {
+					width: 60px;
+					min-width: 60px;
+					max-width: 60px;
+					height: 60px;
+					margin: 0 auto;
+
+					transform: none !important;
+
+					border: 2px solid transparent;
+					border-radius: 50%;
+
+					&:hover {
+						border: 2px solid @color__white;
+
+						@media (min-width: @screen-lg) {
+							border: 4px solid @color__white;
+						}
+					}
+
+					@media (min-width: @screen-md) {
+						width: 100px;
+						min-width: 100px;
+						max-width: 100px;
+						height: 100px;
+					}
+
+					@media (min-width: @screen-lg) {
+						width: 150px;
+						min-width: 150px;
+						max-width: 150px;
+						height: 150px;
+
+						border: 4px solid transparent;
+					}
+				}
+
+				svg {
+					max-width: 65%;
+					margin: 50% auto 0;
+
+					transform: translateY(-50%);
+
+					stroke: #61aa45;
+					fill: none;
+
+					@media (min-width: @screen-lg) {
+						max-width: 50%;
+					}
+				}
+
+				&.active {
+					a {
+						border: 2px solid @color__white;
+
+						@media (min-width: @screen-lg) {
+							border: 4px solid @color__white;
+						}
+
+						svg {
+							stroke: @color__white;
+							fill: none;
+						}
+					}
+				}
+
+				@media (min-width: @screen-sm) {
+					margin: 10px auto;
+				}
 			}
 		}
 	}
