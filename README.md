@@ -8,9 +8,9 @@
 
 ## Summary
 * High Resolution: No
-* Compatible Browsers: IE9+, Edge, Firefox, Safari, Opera, Chrome
+* Compatible Browsers: IE10+, Edge, Firefox, Safari, Opera, Chrome
 * Technologies: BEM, LESS, Grunt, HTML5
-* Files Included: HTML Files, CSS Files, JS Files, PHP Files, fonts and images
+* Files Included: HTML Files, CSS Files, JS Files, images
 * Columns: 12
 * Layout: Responsive
 
