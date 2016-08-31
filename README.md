@@ -74,8 +74,8 @@
     ¦    ¦   ¦   ¦
     ¦    ¦   ¦   +-- products--number-bg1.png
     ¦    ¦   ¦   +-- products--number-bg2.png
-    ¦    ¦
-    ¦    +-- adobe.png
+    ¦    ¦   ¦
+    ¦    ¦   +-- adobe.png
     ¦    ¦
     ¦    +-- promo /
     ¦    ¦   ¦
