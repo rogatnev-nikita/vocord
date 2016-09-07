@@ -1082,6 +1082,10 @@ img {
 .products__areas-header {
   margin-top: 90px;
 }
+.products__areas .products__areas-item {
+  margin-top: 40px;
+  vertical-align: bottom;
+}
 .products__areas span {
   display: block;
   margin-top: 20px;
@@ -1089,8 +1093,26 @@ img {
   font-size: 19px;
   line-height: 1;
 }
-.products__areas .products__areas-item {
-  margin-top: 40px;
+@media (min-width: 992px) {
+  .products__areas {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .products__areas .products__areas-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  .products__areas span {
+    white-space: nowrap;
+  }
 }
 /* ------------------------------------------ */
 /* PROMO BLOCK
