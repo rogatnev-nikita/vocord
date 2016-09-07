@@ -214,10 +214,18 @@
 	li {
 		padding: 0;
 
-		&.active {
-			a {
-				svg {
-					fill: @color__green;
+		&:not(:first-child):not(:last-child) {
+			&.active {
+				a {
+					svg {
+						fill: @color__green;
+						&:nth-child(1) {
+							display: block;
+						}
+						&:nth-child(2) {
+							display: none;
+						}
+					}
 				}
 			}
 		}
@@ -246,6 +254,8 @@
 				transform: none;
 
 				svg {
+					height: auto;
+
 					fill: none;
 
 					polyline {
@@ -257,6 +267,30 @@
 					svg {
 						polyline {
 							stroke: @color__white;
+						}
+					}
+				}
+			}
+		}
+
+		&:not(:first-child):not(:last-child) {
+			a {
+				svg {
+					&:nth-child(1) {
+						display: none;
+					}
+					&:nth-child(2) {
+						display: block;
+					}
+				}
+
+				&:hover {
+					svg {
+						&:nth-child(1) {
+							display: block;
+						}
+						&:nth-child(2) {
+							display: none;
 						}
 					}
 				}
@@ -277,9 +311,9 @@
 		svg {
 			display: block;
 
-			width: 100%;
+			width: 54px;
 			max-width: 100%;
-			height: auto;
+			height: 82px;
 
 			fill: @color__technology-bg;
 		}
@@ -336,6 +370,10 @@
 					&:hover {
 						border: 1px solid @color__white;
 
+						svg {
+							stroke: @color__white;
+						}
+
 						@media (min-width: @screen-sm) {
 							border: 2px solid @color__white;
 						}
@@ -366,20 +404,24 @@
 					}
 				}
 
-				svg {
-					max-width: 65%;
-					margin: 50% auto 0;
+				a {
+					svg {
+						display: block !important;
 
-					transform: translateY(-50%);
+						width: 100%;
+						max-width: 65%;
+						margin: 50% auto 0;
 
-					stroke: #61aa45;
-					fill: none;
+						transform: translateY(-50%);
 
-					@media (min-width: @screen-lg) {
-						max-width: 90px;
+						stroke: #61aa45;
+						fill: none;
+
+						@media (min-width: @screen-lg) {
+							max-width: 90px;
+						}
 					}
 				}
-
 				&.active {
 					a {
 						border: 1px solid @color__white;
