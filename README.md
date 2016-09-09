@@ -5,12 +5,12 @@
 [![vocord][2]][1]
   [1]: https://rogatnev-nikita.github.io/vocord/
   [2]: ./img/screenshot.jpg (vocord screenshot)
-  
+
 ## Summary
 * High Resolution: No
-* Compatible Browsers: IE9+, Edge, Firefox, Safari, Opera, Chrome
+* Compatible Browsers: IE10+, Edge, Firefox, Safari, Opera, Chrome
 * Technologies: BEM, LESS, Grunt, HTML5
-* Files Included: HTML Files, CSS Files, JS Files, PHP Files, fonts and images
+* Files Included: HTML Files, CSS Files, JS Files, images
 * Columns: 12
 * Layout: Responsive
 
@@ -21,39 +21,203 @@
 
 ## File structure
     ROOT FOLDER
-    +-- css
+    +-- css /
     ¦    +-- bootstrap.css
     ¦    +-- bootstrap.min.css
     ¦    +-- style.css
     ¦    +-- style.min.css
     ¦
-    +-- fonts
-    ¦    +-- 
+    +-- img /
+    ¦    +-- catalog /
+    ¦    ¦   ¦
+    ¦    ¦   +-- catalog__analysis--static.png
+    ¦    ¦   +-- catalog__analysis.gif
+    ¦    ¦   +-- catalog__audio--static.png
+    ¦    ¦   +-- catalog__audio.gif
+    ¦    ¦   +-- catalog__faces--static.png
+    ¦    ¦   +-- catalog__faces.gif
+    ¦    ¦   +-- catalog__number--static.png
+    ¦    ¦   +-- catalog__number.gif
+    ¦    ¦   +-- catalog__video--static.png
+    ¦    ¦   +-- catalog__video.gif
+    ¦    ¦
+    ¦    +-- feature /
+    ¦    ¦   ¦
+    ¦    ¦   +-- feature__analysis--tooltip.jpg
+    ¦    ¦   +-- feature__analysis.jpg
+    ¦    ¦   +-- feature__faces--tooltip.jpg
+    ¦    ¦   +-- feature__faces.jpg
+    ¦    ¦   +-- feature__number--tooltip.jpg
+    ¦    ¦   +-- feature__number.jpg
+    ¦    ¦
+    ¦    +-- header /
+    ¦    ¦   ¦
+    ¦    ¦   +-- header__logo.png
+    ¦    ¦
+    ¦    +-- products /
+    ¦    ¦   ¦
+    ¦    ¦   +-- analysis /
+    ¦    ¦   ¦   ¦
+    ¦    ¦   ¦   +-- products--analysis-bg1.png
+    ¦    ¦   ¦
+    ¦    ¦   +-- audio /
+    ¦    ¦   ¦   ¦
+    ¦    ¦   ¦   +-- products--audio-bg1.png
+    ¦    ¦   ¦   +-- products--audio-bg2.png
+    ¦    ¦   ¦
+    ¦    ¦   +-- faces /
+    ¦    ¦   ¦   ¦
+    ¦    ¦   ¦   +-- products--faces-bg1.png
+    ¦    ¦   ¦   +-- products--faces-bg2.png
+    ¦    ¦   ¦
+    ¦    ¦   +-- number /
+    ¦    ¦   ¦   ¦
+    ¦    ¦   ¦   +-- products--number-bg1.png
+    ¦    ¦   ¦   +-- products--number-bg2.png
+    ¦    ¦   ¦
+    ¦    ¦   +-- adobe.png
+    ¦    ¦
+    ¦    +-- promo /
+    ¦    ¦   ¦
+    ¦    ¦   +-- promo__bg.jpg
+    ¦    ¦
+    ¦    +-- technology /
+    ¦    ¦   ¦
+    ¦    ¦   +-- analysis /
+    ¦    ¦   ¦   ¦
+    ¦    ¦   ¦   +-- technology__bg.png
+    ¦    ¦   ¦   +-- technology__slides-item--1.png
+    ¦    ¦   ¦   +-- technology__slides-item--2a--tooltip.png
+    ¦    ¦   ¦   +-- technology__slides-item--2a.png
+    ¦    ¦   ¦   +-- technology__slides-item--2b--tooltip.png
+    ¦    ¦   ¦   +-- technology__slides-item--2b.png
+    ¦    ¦   ¦   +-- technology__slides-item--3.png
+    ¦    ¦   ¦
+    ¦    ¦   +-- audio /
+    ¦    ¦   ¦   ¦
+    ¦    ¦   ¦   +-- technology__bg.png
+    ¦    ¦   ¦   +-- technology__slider-icon-navigation--bg1.svg
+    ¦    ¦   ¦   +-- technology__slider-icon-navigation--bg2.svg
+    ¦    ¦   ¦   +-- technology__slider-icon-navigation--bg3.svg
+    ¦    ¦   ¦   +-- technology__slides-item--1.png
+    ¦    ¦   ¦
+    ¦    ¦   +-- faces /
+    ¦    ¦   ¦   ¦
+    ¦    ¦   ¦   +-- technology__bg.png
+    ¦    ¦   ¦   +-- technology__slides-item--1.png
+    ¦    ¦   ¦   +-- technology__slides-item--2.png
+    ¦    ¦   ¦   +-- technology__slides-item--3.png
+    ¦    ¦   ¦
+    ¦    ¦   +-- number /
+    ¦    ¦       ¦
+    ¦    ¦       +-- technology__bg.png
+    ¦    ¦       +-- technology__slider-navigation--bg.svg
+    ¦    ¦       +-- technology__slider-navigation--mobilebg.svg
+    ¦    ¦       +-- technology__slides-item--1.png
+    ¦    ¦       +-- technology__slides-item--2.png
+    ¦    ¦       +-- technology__slides-item--3.png
+    ¦    ¦       +-- technology__slides-item--4.png
+    ¦    ¦       +-- technology__slides-item--5.png
+    ¦    ¦
+    ¦    +-- screenshot.jpg
     ¦
-    +-- img
-    ¦    +-- 
-    ¦
-    +-- js
+    +-- js /
+    ¦    ¦
     ¦    +-- script.js
     ¦
     +-- less /
     ¦   ¦  
     ¦   +-- blocks /
     ¦   ¦   ¦
-    ¦   ¦   +-- 
+    ¦   ¦   +-- catalog.less
+    ¦   ¦   +-- feature.less
+    ¦   ¦   +-- footer.less
+    ¦   ¦   +-- header.less
+    ¦   ¦   +-- intro.less
+    ¦   ¦   +-- main.less
+    ¦   ¦   +-- map.less
+    ¦   ¦   +-- products.less
+    ¦   ¦   +-- promo.less
+    ¦   ¦   +-- technology.less
     ¦   ¦   
     ¦   +-- bootstrap /
     ¦   ¦   ¦
+    ¦   ¦   +-- alerts.less
+    ¦   ¦   +-- badges.less
+    ¦   ¦   +-- breadcrumbs.less
+    ¦   ¦   +-- button-groups.less
+    ¦   ¦   +-- buttons.less
+    ¦   ¦   +-- carousel.less
+    ¦   ¦   +-- close.less
+    ¦   ¦   +-- code.less
+    ¦   ¦   +-- component-animations.less
+    ¦   ¦   +-- dropdowns.less
+    ¦   ¦   +-- forms.less
+    ¦   ¦   +-- glyphicons.less
+    ¦   ¦   +-- grid.less
+    ¦   ¦   +-- input-groups.less
+    ¦   ¦   +-- jumbotron.less
+    ¦   ¦   +-- labels.less
+    ¦   ¦   +-- list-group.less
+    ¦   ¦   +-- media.less
+    ¦   ¦   +-- mixins.less
+    ¦   ¦   +-- modals.less
+    ¦   ¦   +-- navbar.less
+    ¦   ¦   +-- navs.less
+    ¦   ¦   +-- normalize.less
+    ¦   ¦   +-- pager.less
+    ¦   ¦   +-- pagination.less
+    ¦   ¦   +-- panels.less
+    ¦   ¦   +-- popovers.less
+    ¦   ¦   +-- print.less
+    ¦   ¦   +-- progress-bars.less
+    ¦   ¦   +-- responsive-embed.less
+    ¦   ¦   +-- responsive-utilities.less
+    ¦   ¦   +-- scaffolding.less
+    ¦   ¦   +-- tables.less
+    ¦   ¦   +-- theme.less
+    ¦   ¦   +-- thumbnails.less
+    ¦   ¦   +-- tooltip.less
+    ¦   ¦   +-- type.less
+    ¦   ¦   +-- utilities.less
+    ¦   ¦   +-- variables.less
+    ¦   ¦   +-- wells.less
     ¦   ¦   +-- mixins /
-    ¦   ¦   ¦   ¦
-    ¦   ¦   ¦   +--
-    ¦   ¦   ¦
-    ¦   ¦   +-- 
+    ¦   ¦       ¦
+    ¦   ¦       +-- alerts.less
+    ¦   ¦       +-- background-variant.less
+    ¦   ¦       +-- border-radius.less
+    ¦   ¦       +-- buttons.less
+    ¦   ¦       +-- center-block.less
+    ¦   ¦       +-- clearfix.less
+    ¦   ¦       +-- forms.less
+    ¦   ¦       +-- gradients.less
+    ¦   ¦       +-- grid-framework.less
+    ¦   ¦       +-- grid.less
+    ¦   ¦       +-- hide-text.less
+    ¦   ¦       +-- image.less
+    ¦   ¦       +-- labels.less
+    ¦   ¦       +-- list-group.less
+    ¦   ¦       +-- nav-divider.less
+    ¦   ¦       +-- nav-vertical-align.less
+    ¦   ¦       +-- opacity.less
+    ¦   ¦       +-- pagination.less
+    ¦   ¦       +-- panels.less
+    ¦   ¦       +-- progress-bar.less
+    ¦   ¦       +-- reset-filter.less
+    ¦   ¦       +-- reset-text.less
+    ¦   ¦       +-- resize.less
+    ¦   ¦       +-- responsive-visibility.less
+    ¦   ¦       +-- size.less
+    ¦   ¦       +-- tab-focus.less
+    ¦   ¦       +-- table-row.less
+    ¦   ¦       +-- text-emphasis.less
+    ¦   ¦       +-- text-overflow.less
+    ¦   ¦       +-- vendor-prefixes.less
     ¦   ¦   
     ¦   +-- general /
     ¦   ¦   ¦
     ¦   ¦   +-- global.less
-    ¦   ¦   +-- mixins.less
     ¦   ¦   +-- variables.less
     ¦   ¦
     ¦   +-- bootstrap.less
@@ -65,8 +229,13 @@
     +-- .travis.yml
     +-- Gruntfile.js
     +-- README.md
-    +-- index.html
     +-- package.json
+    +-- analysis.html
+    +-- audio.html
+    +-- faces.html
+    +-- index.html
+    +-- number.html
+    +-- video.html
 
 [travis-image]: https://travis-ci.org/rogatnev-nikita/vocord.svg?branch=master
 [travis-url]: https://travis-ci.org/rogatnev-nikita/vocord

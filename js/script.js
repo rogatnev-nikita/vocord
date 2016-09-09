@@ -61,4 +61,59 @@ $(document).ready(function () {
 		});
 	});
 
+	// Numper page map block init
+	function escapeXml(string) {
+		return string.replace(/[<>]/g, function (c) {
+			switch (c) {
+				case '<':
+					return '\u003c';
+				case '>':
+					return '\u003e';
+			}
+		});
+	}
+
+	var pins = {
+		tr: escapeXml('<div class="map-pin"><span>Тверская обл.</span></div>'),
+		mc: escapeXml('<div class="map-pin"><span>Московская обл.</span></div>'),
+		ar: escapeXml('<div class="map-pin"><span>Архангельская обл.</span></div>'),
+		ki: escapeXml('<div class="map-pin"><span>Кировская обл.</span></div>'),
+		sr: escapeXml('<div class="map-pin"><span>Саратовская обл.</span></div>'),
+		kl: escapeXml('<div class="map-pin"><span>КАРЕЛИЯ</span></div>'),
+		ko: escapeXml('<div class="map-pin"><span>КОМИ</span></div>'),
+
+		mc: escapeXml('<div class="map-pin map-pin--marker"></div>')
+	};
+
+	$('.vmap').vectorMap({
+		map: 'russia',
+
+		backgroundColor: '#222629',
+		borderColor: '#222629',
+		borderWidth: 1,
+
+		pins: pins,
+		pinMode: 'content',
+
+		color: '#6BA442',
+		hoverOpacity: 0.9,
+		selectedColor: '#6BA442',
+
+		enableZoom: true,
+
+		selectedRegions: null,
+		showTooltip: null,
+
+		normalizeFunction: 'polynomial',
+
+		onLoad: function (event, map) {
+			$('.vmap').vectorMap('zoomIn');
+			$('.vmap').vectorMap('zoomIn');
+		},
+
+		onRegionClick: function (element, code, region) {
+			var message = 'You clicked "' + region + '" which has the code: ' + code.toUpperCase();
+		}
+
+	});
 });

@@ -242,6 +242,12 @@
 }
 
 .products__areas {
+	.products__areas-item {
+		margin-top: 40px;
+
+		vertical-align: bottom;
+	}
+
 	span {
 		display: block;
 
@@ -253,7 +259,15 @@
 		line-height: 1;
 	}
 
-	.products__areas-item {
-		margin-top: 40px;
+	@media (min-width: @screen-md) {
+		display: flex;
+
+		.products__areas-item {
+			display: flex;
+			flex-direction: column;
+
+			align-items: center;
+			justify-content: flex-end;
+		}
 	}
 }
