@@ -4,22 +4,37 @@
 .promo {
 	position: relative;
 
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 110px;
+	padding-bottom: 110px;
 
 	text-align: center;
 
-	background: url(../img/promo/promo__bg.jpg) no-repeat center top;
-	background-size: cover;
+	&--faces {
+		background: url(../img/promo/faces/promo__bg.jpg) no-repeat center top;
+		background-size: cover;
 
-	@media (min-width: @screen-md) {
-		padding-top: 370px;
-		padding-bottom: 80px;
+		@media (min-width: @screen-md) {
+			padding-top: 370px;
+			padding-bottom: 80px;
+		}
+
+		@media (min-width: @screen-lg) {
+			background: url(../img/promo/faces/promo__bg.jpg) no-repeat center center;
+			background-size: 100% auto;
+		}
 	}
 
-	@media (min-width: @screen-lg) {
-		background: url(../img/promo/promo__bg.jpg) no-repeat center center;
-		background-size: 100% auto;
+	&--video {
+		background: url(../img/promo/video/promo__bg.jpg) no-repeat center top;
+		background-size: cover;
+
+		.promo__text {
+			p {
+				@media (min-width: @screen-md) {
+					margin-top: 60px;
+				}
+			}
+		}
 	}
 }
 
@@ -44,33 +59,64 @@
 			margin-bottom: 60px;
 		}
 	}
+}
 
-	a {
-		display: block;
+.promo__link {
+	display: block;
 
-		padding: 8px 20px;
+	padding: 8px 20px;
 
-		text-align: center;
-		white-space: nowrap;
+	text-align: center;
+	white-space: nowrap;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	color: @color__green;
+	border: 3px solid @color__green;
+	border-radius: 35px;
+
+	font-size: 16px;
+	line-height: 1;
+
+	&:hover {
 		text-decoration: none;
-		text-transform: uppercase;
+
+		color: @color__white;
+		background-color: @color__green;
+	}
+
+	@media (min-width: @screen-sm) {
+		display: inline;
+	}
+}
+
+.promo__download {
+	position: relative;
+
+	text-decoration: none;
+
+	color: @color__green;
+	border-bottom: 1px solid @color__green;
+
+	&:hover {
+		text-decoration: none;
 
 		color: @color__green;
-		border: 3px solid @color__green;
-		border-radius: 35px;
+		border: 0;
+	}
 
-		font-size: 16px;
-		line-height: 1;
+	&:before {
+		position: absolute;
+		left: -40px;
 
-		&:hover {
-			text-decoration: none;
+		display: block;
 
-			color: @color__white;
-			background-color: @color__green;
-		}
+		width: 23px;
+		height: 23px;
 
-		@media (min-width: @screen-sm) {
-			display: inline;
-		}
+		content: "";
+
+		background: url(../img/promo/download.png) no-repeat;
+		background-size: contain;
 	}
 }

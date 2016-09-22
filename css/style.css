@@ -1120,12 +1120,12 @@ img {
 }
 .products__areas span {
   display: block;
+  width: 100%;
+  height: 40px;
   margin-top: 20px;
   color: #414042;
   font-size: 19px;
   line-height: 1;
-  height: 40px;
-  width: 100%;
 }
 @media (min-width: 992px) {
   .products__areas {
@@ -1148,22 +1148,33 @@ img {
 /* ------------------------------------------ */
 .promo {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 110px;
+  padding-bottom: 110px;
   text-align: center;
-  background: url(../img/promo/promo__bg.jpg) no-repeat center top;
+}
+.promo--faces {
+  background: url(../img/promo/faces/promo__bg.jpg) no-repeat center top;
   background-size: cover;
 }
 @media (min-width: 992px) {
-  .promo {
+  .promo--faces {
     padding-top: 370px;
     padding-bottom: 80px;
   }
 }
 @media (min-width: 1200px) {
-  .promo {
-    background: url(../img/promo/promo__bg.jpg) no-repeat center center;
+  .promo--faces {
+    background: url(../img/promo/faces/promo__bg.jpg) no-repeat center center;
     background-size: 100% auto;
+  }
+}
+.promo--video {
+  background: url(../img/promo/video/promo__bg.jpg) no-repeat center top;
+  background-size: cover;
+}
+@media (min-width: 992px) {
+  .promo--video .promo__text p {
+    margin-top: 60px;
   }
 }
 .promo__text h1 {
@@ -1185,7 +1196,7 @@ img {
     margin-bottom: 60px;
   }
 }
-.promo__text a {
+.promo__link {
   display: block;
   padding: 8px 20px;
   text-align: center;
@@ -1198,15 +1209,36 @@ img {
   font-size: 16px;
   line-height: 1;
 }
-.promo__text a:hover {
+.promo__link:hover {
   text-decoration: none;
   color: #ffffff;
   background-color: #61aa45;
 }
 @media (min-width: 768px) {
-  .promo__text a {
+  .promo__link {
     display: inline;
   }
+}
+.promo__download {
+  position: relative;
+  text-decoration: none;
+  color: #61aa45;
+  border-bottom: 1px solid #61aa45;
+}
+.promo__download:hover {
+  text-decoration: none;
+  color: #61aa45;
+  border: 0;
+}
+.promo__download:before {
+  position: absolute;
+  left: -40px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  content: "";
+  background: url(../img/promo/download.png) no-repeat;
+  background-size: contain;
 }
 /* ------------------------------------------ */
 /* MAP BLOCK
