@@ -485,6 +485,20 @@ img {
   content: "";
   background-image: linear-gradient(#02abce 0%, #02abce 25%, #a2499b 25%, #a2499b 50%, #ee741f 50%, #ee741f 75%, #61aa45 75%, #61aa45 100%);
 }
+.technology--video {
+  background: #222629 url(../img/technology/video/technology__bg.png) no-repeat center center;
+  background-size: cover;
+}
+.technology--video:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 5px;
+  height: 100%;
+  content: "";
+  background-image: linear-gradient(#02abce 0%, #02abce 25%, #a2499b 25%, #a2499b 50%, #ee741f 50%, #ee741f 75%, #61aa45 75%, #61aa45 100%);
+}
 .technology--number {
   background: #222629 url(../img/technology/number/technology__bg.png) repeat;
 }
