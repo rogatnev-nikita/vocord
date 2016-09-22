@@ -66,6 +66,26 @@
 		}
 	}
 
+	&--video {
+		background: @color__technology-bg url(../img/technology/video/technology__bg.png) no-repeat center center;
+		background-size: cover;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			display: block;
+
+			width: 5px;
+			height: 100%;
+
+			content: "";
+
+			background-image: linear-gradient(@color__technology-line__1 0%, @color__technology-line__1 25%, @color__technology-line__2 25%, @color__technology-line__2 50%, @color__technology-line__3 50%, @color__technology-line__3 75%, @color__technology-line__4 75%, @color__technology-line__4 100%);
+		}
+	}
+
 	&--number {
 		background: @color__technology-bg url(../img/technology/number/technology__bg.png) repeat;
 
