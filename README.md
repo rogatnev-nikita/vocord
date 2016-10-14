@@ -3,7 +3,7 @@
 Разработка и производство профессиональных систем безопасности: видеонаблюдение, распознавание лиц 2D и 3D, распознавание номеров, контроль дорожного движения, контроль цифровых и аналоговых телефонных линий, потока Е1, IP-телефонии, автоматическое оповещение.
 
 [![vocord][2]][1]
-  [1]: https://rogatnev-nikita.github.io/vocord/
+  [1]: https://mayer-web.github.io/vocord/
   [2]: ./img/screenshot.jpg (vocord screenshot)
 
 ## Summary
@@ -237,11 +237,11 @@
     +-- number.html
     +-- video.html
 
-[travis-image]: https://travis-ci.org/rogatnev-nikita/vocord.svg?branch=master
-[travis-url]: https://travis-ci.org/rogatnev-nikita/vocord
+[travis-image]: https://travis-ci.org/mayer-web/vocord.svg?branch=master
+[travis-url]: https://travis-ci.org/mayer-web/vocord
 
-[dependency-image]: https://david-dm.org/rogatnev-nikita/vocord.svg?style=flat-square
-[dependency-url]: https://david-dm.org/rogatnev-nikita/vocord
+[dependency-image]: https://david-dm.org/mayer-web/vocord.svg?style=flat-square
+[dependency-url]: https://david-dm.org/mayer-web/vocord
 
-[dev-dependency-image]: https://david-dm.org/rogatnev-nikita/vocord/dev-status.svg?style=flat-square
-[dev-dependency-url]: https://david-dm.org/rogatnev-nikita/vocord#info=devDependencies
+[dev-dependency-image]: https://david-dm.org/mayer-web/vocord/dev-status.svg?style=flat-square
+[dev-dependency-url]: https://david-dm.org/mayer-web/vocord#info=devDependencies
