@@ -1186,6 +1186,7 @@ img {
   }
 }
 .promo--video {
+  padding-bottom: 50px;
   background: url(../img/promo/video/promo__bg.jpg) no-repeat center top;
   background-size: cover;
 }
