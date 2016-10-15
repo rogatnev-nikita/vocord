@@ -452,7 +452,9 @@ img {
 }
 .technology p {
   text-align: center;
+  letter-spacing: 0.03em;
   color: #ffffff;
+  font-weight: 300;
 }
 @media (min-width: 992px) {
   .technology p.text-left {
@@ -893,7 +895,7 @@ img {
 .technology__slides h2 {
   color: #61aa45;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 300;
   font-style: italic;
   line-height: auto;
 }
@@ -1217,11 +1219,13 @@ img {
   text-align: center;
   white-space: nowrap;
   text-decoration: none;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #61aa45;
   border: 3px solid #61aa45;
   border-radius: 35px;
   font-size: 16px;
+  font-weight: 300;
   line-height: 1;
 }
 .promo__link:hover {
