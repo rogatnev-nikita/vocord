@@ -954,7 +954,7 @@ img {
 }
 @media (min-width: 992px) {
   .products--analysis {
-    background: url(../img/products/analysis/products--analysis-bg1.png) no-repeat left top;
+    background: url(../img/products/analysis/products--analysis-bg1.png) no-repeat left top, url(../img/products/analysis/products--analysis-bg2.png) no-repeat right center;
     background-size: auto;
   }
 }
@@ -1191,6 +1191,16 @@ img {
 }
 @media (min-width: 992px) {
   .promo--video .promo__text p {
+    margin-top: 60px;
+  }
+}
+.promo--analysis {
+  padding-bottom: 50px;
+  background: url(../img/promo/analysis/promo__bg.jpg) no-repeat center top;
+  background-size: cover;
+}
+@media (min-width: 992px) {
+  .promo--analysis .promo__text p {
     margin-top: 60px;
   }
 }
