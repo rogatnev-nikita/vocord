@@ -35,6 +35,41 @@
 	}
 }
 
+.map__city-slider {
+	position: relative;
+
+	.map__arrow {
+		position: absolute;
+		top: 50%;
+
+		display: block;
+
+		width: 30px;
+		height: 35px;
+
+		transform: translateY(-50%);
+
+		background: #1f2225;
+
+		svg {
+			display: block;
+
+			max-width: 10px;
+			margin: 5px auto 0;
+		}
+
+		&--left {
+			left: -30px;
+		}
+
+		&--right {
+			right: -30px;
+
+			transform: translateY(-50%) rotate(180deg);
+		}
+	}
+}
+
 /* ------------------------------------------ */
 /* MAP BLOCK
 /* ------------------------------------------ */

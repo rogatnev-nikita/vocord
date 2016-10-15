@@ -1301,6 +1301,30 @@ img {
   padding: 100px 30px;
   background-color: #4d4d4f;
 }
+.map__city-slider {
+  position: relative;
+}
+.map__city-slider .map__arrow {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 30px;
+  height: 35px;
+  transform: translateY(-50%);
+  background: #1f2225;
+}
+.map__city-slider .map__arrow svg {
+  display: block;
+  max-width: 10px;
+  margin: 5px auto 0;
+}
+.map__city-slider .map__arrow--left {
+  left: -30px;
+}
+.map__city-slider .map__arrow--right {
+  right: -30px;
+  transform: translateY(-50%) rotate(180deg);
+}
 /* ------------------------------------------ */
 /* MAP BLOCK
 /* ------------------------------------------ */
