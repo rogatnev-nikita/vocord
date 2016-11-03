@@ -346,6 +346,11 @@ img {
   padding-top: 100px;
   padding-bottom: 200px;
 }
+@media (max-width: 1200px) {
+  .catalog .row-eq-height {
+    display: block;
+  }
+}
 .catalog__item {
   display: block;
   text-align: center;
