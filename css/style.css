@@ -913,6 +913,88 @@ img {
   width: 100%;
   margin: 40px auto 0;
 }
+.tooltips {
+  position: relative;
+}
+.tooltips__item {
+  position: absolute;
+  display: block;
+  padding-left: 12px;
+  text-align: left;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 20px;
+}
+.tooltips__item span {
+  display: inline;
+  text-transform: uppercase;
+}
+.tooltips__item--orange {
+  border-left: 2px solid #ee741f;
+}
+.tooltips__item--neyron {
+  margin-top: 50%;
+  transform: translateY(-35%);
+  border-left: 2px solid #61aa45;
+}
+.tooltips__item--train {
+  position: absolute;
+  right: 0;
+  margin-top: -40%;
+  border-left: 2px solid #61aa45;
+}
+@media (min-width: 992px) {
+  .tooltips__item--train {
+    right: -10%;
+  }
+}
+.tooltips__item--blur {
+  position: absolute;
+  margin-top: 50%;
+  transform: translateY(-50%);
+  border-left: 2px solid #61aa45;
+}
+.tooltips__item--before {
+  position: relative;
+  border-left: 2px solid #ee741f;
+}
+@media (min-width: 992px) {
+  .tooltips__item--before {
+    position: absolute;
+    top: 30%;
+    left: 0;
+  }
+}
+.tooltips__item--before span {
+  color: #ee741f;
+}
+.tooltips__item--after {
+  top: 0;
+  right: 0;
+  border-left: 2px solid #61aa45;
+}
+@media (min-width: 992px) {
+  .tooltips__item--after {
+    top: 30%;
+  }
+}
+.tooltips__item--after span {
+  color: #61aa45;
+}
+.tooltips__item--bottom {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  border-left: 2px solid #61aa45;
+}
+@media (min-width: 992px) {
+  .tooltips__item--bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
 /* ------------------------------------------ */
 /* PRODUCTS BLOCK
 /* ------------------------------------------ */

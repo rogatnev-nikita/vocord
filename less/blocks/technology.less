@@ -637,3 +637,112 @@
 		margin: 40px auto 0;
 	}
 }
+
+.tooltips {
+	position: relative;
+
+	&__item {
+		position: absolute;
+
+		display: block;
+
+		padding-left: 12px;
+
+		text-align: left;
+		letter-spacing: 0.03em;
+
+		color: @color__white;
+
+		font-size: 13px;
+		line-height: 20px;
+
+		span {
+			display: inline;
+
+			text-transform: uppercase;
+		}
+
+		&--orange {
+			border-left: 2px solid @color__technology-line__3;
+		}
+
+		&--neyron {
+			margin-top: 50%;
+
+			transform: translateY(-35%);
+
+			border-left: 2px solid @color__green;
+		}
+
+		&--train {
+			position: absolute;
+			right: 0;
+
+			margin-top: -40%;
+
+			border-left: 2px solid #61aa45;
+
+			@media (min-width: @screen-md) {
+				right: -10%;
+			}
+		}
+
+		&--blur {
+			position: absolute;
+
+			margin-top: 50%;
+
+			transform: translateY(-50%);
+
+			border-left: 2px solid #61aa45;
+		}
+
+		&--before {
+			position: relative;
+
+			border-left: 2px solid @color__technology-line__3;
+
+
+			@media (min-width: @screen-md) {
+				position: absolute;
+				top: 30%;
+				left: 0;
+			}
+
+			span {
+				color: @color__technology-line__3;
+			}
+		}
+
+		&--after {
+			top: 0;
+			right: 0;
+
+			border-left: 2px solid @color__green;
+
+			@media (min-width: @screen-md) {
+				top: 30%;
+			}
+
+			span {
+				color: @color__green;
+			}
+		}
+
+		&--bottom {
+			position: relative;
+
+			width: 70%;
+			margin: 0 auto;
+
+			border-left: 2px solid @color__green;
+
+			@media (min-width: @screen-md) {
+				bottom: 0;
+				left: 50%;
+
+				transform: translate(-50%);
+			}
+		}
+	}
+}
