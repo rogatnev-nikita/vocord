@@ -3,9 +3,7 @@
 
 Разработка и производство профессиональных систем безопасности: видеонаблюдение, распознавание лиц 2D и 3D, распознавание номеров, контроль дорожного движения, контроль цифровых и аналоговых телефонных линий, потока Е1, IP-телефонии, автоматическое оповещение.
 
-[![vocord][2]][1]
-  [1]: https://mayer-web.github.io/vocord/
-  [2]: ./img/screenshot.jpg (vocord screenshot)
+[![vocord](./img/screenshot.jpg)](ttps://mayer-web.github.io/vocord/)
 
 ## Summary
 * High Resolution: No
